@@ -80,7 +80,7 @@ class Registration extends CI_Controller {
 					$messge = array('message' => 'Something went wrong','class' => 'alert alert-danger');
 					$this->session->set_flashdata('myMsj',$messge );
 				}
-				redirect('/registration/table');
+				redirect('/Registration/table');
 			} 
 		 
 		}
@@ -93,8 +93,8 @@ class Registration extends CI_Controller {
 
 		$param = array();
 		$start = ($this->uri->segment(3)) ? ($this->uri->segment(3)-1) : 0;
-		$limit = 2;
-		$config['base_url'] = base_url() . '/registration/table';
+		$limit = 4;
+		$config['base_url'] = base_url() . '/Registration/table';
 		$config['total_rows'] = $this->registration_model->getTotalRow(); 
 		$config['per_page'] = $limit;
 		$config["uri_segment"] = 3;
@@ -151,7 +151,7 @@ class Registration extends CI_Controller {
 			$messge = array('message' => 'Something went wrong','class' => 'alert alert-danger');
 			$this->session->set_flashdata('myMsj',$messge );
 		}
-		redirect('/registration/table');
+		redirect('/Registration/table');
 	}
 
 	public function checkName($str){ 

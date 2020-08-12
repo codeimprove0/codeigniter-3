@@ -55,6 +55,6 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['user/code-data/(:num)/(:any)'] =  'user/codeData/$1/$2';
 
-$route['registration/edit/(:num)'] =  'registration/add/$1';
+$route['Registration/edit/(:num)'] =  'Registration/add/$1';
 
  

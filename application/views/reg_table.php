@@ -5,7 +5,7 @@
  	<div class="row">
  		<div class="col-md-2"></div>
  		<div class="col-md-8">
-		 <button class="btn btn-primary"><a href="<?php echo base_url('registration/add/');?>" class="textCls">Add</a> </button> 
+		 <button class="btn btn-primary"><a href="<?php echo base_url('Registration/add/');?>" class="textCls">Add</a> </button> 
 		 <?php
 					if ($this->session->flashdata('myMsj')) {
 						$message =  $this->session->flashdata('myMsj');
@@ -30,13 +30,13 @@
 						 <td><?php echo $row->phone_no;?></td>   
 						 <td>
 							<?php if($row->profile_pic){?>
-								<img src="<?php echo base_url('public/images/').$row->profile_pic;?>" style="width:150px;height:150px">
+								<img src="<?php echo base_url('public/images/').$row->profile_pic;?>" style="width:50px;height:80px">
 							<?php } ?>
 
 						 </td>  
 						 <td> 
-							<button class="btn btn-primary"><a href="<?php echo base_url('registration/edit/').$row->id;?>" class="textCls">Edit</a> </button>
-						    <button class="btn btn-danger"><a href="<?php echo base_url('registration/delete/').$row->id;?>" class="textCls">Delete</a> </button>
+							<button class="btn btn-primary"><a href="<?php echo base_url('Registration/edit/').$row->id;?>" class="textCls">Edit</a> </button>
+						    <button class="btn btn-danger"><a href="<?php echo base_url('Registration/delete/').$row->id;?>" class="textCls">Delete</a> </button>
 						</td> 
 					 </tr> 
 					 <?php } ?>

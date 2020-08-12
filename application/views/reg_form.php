@@ -7,7 +7,7 @@
  		<div class="col-md-8">
 
  			<form method="post" action="<?php  if(isset($editInfo)){
-			echo base_url('registration/edit/').$editInfo->id;}else{  echo base_url('registration/add'); } ?>" enctype="multipart/form-data">
+			echo base_url('Registration/edit/').$editInfo->id;}else{  echo base_url('Registration/add'); } ?>" enctype="multipart/form-data">
  				<?php
 					if ($this->session->flashdata('myMsj')) {
 						$message =  $this->session->flashdata('myMsj');
@@ -71,7 +71,7 @@
  					<div class="col-sm-4"> </div>
  					<div class="col-sm-4">
 						 <button type="submit" class="btn btn-primary"><?php echo $pageType;?></button>
-						 <button class="btn btn-danger"><a href="<?php echo base_url('registration/table/');?>" class="textCls">Back</a> </button> 
+						 <button class="btn btn-danger"><a href="<?php echo base_url('Registration/table/');?>" class="textCls">Back</a> </button> 
  					</div>
  				</div>
 
